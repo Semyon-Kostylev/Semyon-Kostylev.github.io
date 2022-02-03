@@ -1,0 +1,29 @@
+.gray {
+  font-weight: 500;
+  color: $gray-color;
+
+  &_18 {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  &_20 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+@media (max-width: 576px) {
+  .gray {
+
+    &_18 {
+      font-size: 14px;
+      line-height: 18px;
+    }
+
+    &_20 {
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+}

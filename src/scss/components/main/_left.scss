@@ -1,0 +1,27 @@
+.left {
+
+  &__type {
+    margin-bottom: 82px;
+  }
+
+  &__sum {
+    margin-bottom: 59px;
+  }
+
+  &__time {
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 576px) {
+  .left {
+
+    &__sum {
+      margin-bottom: 20px;
+    }
+
+    &__time {
+      margin-bottom: 20px;
+    }
+  }
+}

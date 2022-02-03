@@ -1,0 +1,39 @@
+.range {
+
+  &__input {
+    height: 6px;
+    margin-bottom: 10px;
+    border: none;
+    background: $gray-color;
+    cursor: pointer;
+
+    .noUi-connect {
+      background: $green-color;
+    }
+
+    .noUi-handle {
+      width: 26px;
+      height: 26px;
+      top: -10px;
+      border: none;
+      border-radius: 50px;
+      background: $green-color;
+      box-shadow: none;
+      cursor: pointer;
+
+      &::before, &::after {
+        display: none;
+      }
+
+      &:focus-visible {
+        outline: 2px solid $dark-green;
+      }
+    }
+  }
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: max-content max-content;
+    justify-content: space-between;
+  }
+}

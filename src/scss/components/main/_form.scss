@@ -1,0 +1,23 @@
+.form {
+  display: grid;
+  grid-template-columns: 60.4% 29.7%;
+  justify-content: space-between;
+}
+
+@media (max-width: 1378px) {
+  .form {
+    display: block;
+
+    &__left {
+      margin-bottom: 50px;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .form {
+    &__left {
+      margin-bottom: 30px;
+    }
+  }
+}

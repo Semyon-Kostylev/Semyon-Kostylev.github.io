@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Калькулятор займа под ПТС</title>
+
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/nouislider.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+
+  <script defer src="./js/nouislider.min.js"></script>
+  <script defer src="./js/main.js"></script>
+
+</head>
+
+<body>
+  <main class="main">
+    <section class="calc">
+      <div class="calc__container container">
+        <div class="calc__content">
+          <h2 class="calc__title">
+            Калькулятор займа под ПТС
+          </h2>
+          <form class="calc__form form" action="#">
+            <div class="form__left left">
+              <div class="left__type type">
+                <h3 class="type__title">
+                  Тип платежа
+                </h3>
+                <div class="type__group">
+                  <button class="type__btn type__btn-pl event chosen" id="diff" type="button">
+                    Дифференцированный
+                  </button>
+                  <button class="type__btn event" id="ann" type="button">
+                    Аннуитетный
+                  </button>
+                </div>
+              </div>
+              <div class="left__sum element">
+                <div class="element__info">
+                  <h2 class="element__title">
+                    Сумма займа
+                  </h2>
+                  <span class="element__number" id="sum-number"></span>
+                </div>
+                <div class="element__range range">
+                  <div class="range__input" id="sum"></div>
+                  <div class="range__wrapper">
+                    <span class="range__min-max gray gray_20">
+                      от 15 000 &#8381
+                    </span>
+                    <span class="range__min-max gray gray_20">
+                      до 1 000 000 &#8381
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="left__time element">
+                <div class="element__info">
+                  <h2 class="element__title">
+                    Срок займа
+                  </h2>
+                  <span class="element__number" id="time-number"></span>
+                </div>
+                <div class="element__range range">
+                  <div class="range__input" id="time"></div>
+                  <div class="range__wrapper">
+                    <span class="range__min-max gray gray_20">
+                      от 2 месяцев
+                    </span>
+                    <span class="range__min-max gray gray_20">
+                      до 12 месяцев
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <p class="left__descr gray gray_18">
+                Условия выдачи займа могут отличаться, исходя из анализа документов и состояния вашего автомобиля
+              </p>
+            </div>
+            <div class="form__right right">
+              <div class="right__rate result">
+                <h2 class="result__title gray gray_20">
+                  Ставка
+                </h2>
+                <div class="result__number">2.7%</div>
+              </div>
+              <div class="right__payment result">
+                <h2 class="result__title gray gray_20">
+                  Ежемесячный платеж
+                </h2>
+                <div class="result__number" id="sum-per-month"></div>
+              </div>
+              <button class="right__btn event" type="submit">
+                Подать заявку
+              </button>
+              <p class="right__descr gray gray_18">
+                Расчёт займа предварительный
+              </p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>
